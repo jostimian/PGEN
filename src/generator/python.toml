@@ -1,0 +1,29 @@
+title = "Python simple template."
+
+[options]
+openTerminal = true
+openFileExp = true
+
+[this]
+[[this.files]]
+fileName = "Main.py"
+filePath = "src"
+fileContent = '''
+print("Hello World")
+'''
+
+[[this.files]]
+fileName = "README.md"
+filePath = ""
+fileContent = '''
+### simple Project
+generated in projectGeneratorCLI
+'''
+
+[[this.folders]]
+folderName = "src"
+parentFolder = ""
+
+[[this.folders]]
+folderName = "bin"
+parentFolder = ""
