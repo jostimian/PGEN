@@ -3,10 +3,12 @@ import os
 from colorama import Back, init
 import subprocess
 import sys
+import time
 
 init(autoreset=True)
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 def generate(filePath,language, openTerminal, openExp):
+    timerStart = time.time()
     getConfig = open(__location__+"\generator\\"+language+'.toml','r');
     configParsed = toml.load(getConfig)
 
@@ -54,3 +56,5 @@ def generate(filePath,language, openTerminal, openExp):
             subprocess.Popen(r'explorer /select,"{}"'.format(filePath))
         else:
             pass
+    timerEnd = time.time()
+    print("{}".format(timerEnd-timerStart))
