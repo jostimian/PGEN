@@ -12,5 +12,4 @@ This command will create a new python project
 ``` bash
 pgen --fp /path/to/your/folder -l python
 ```
-You can read the documentation to get more indepth with the cli argumentents, adding and editing generator file
-**I am still working in the documentation**
+You can read the [documentation](https://github.com/jostimian/PGEN/wiki/Docs) to get more indepth with the cli argumentents, adding and editing generator file
