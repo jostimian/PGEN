@@ -15,3 +15,4 @@ def readConfig(configFileName):
     print("\nFolders:")
     for index in range(len(configParsed["this"]["folders"])): #? show folders
         print("{}".format(configParsed["this"]["folders"][index]["folderName"]))
+    config.close()
